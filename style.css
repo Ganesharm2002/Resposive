@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+html,body{
+    height: 100%;
+    width:100%;
+    font-family: 'Lato', sans-serif;
+}
+/* Utility Classes */
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    height: 100px;
+    width:100%;
+    /* background-color: cornflowerblue; */
+    /* color:white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 2px solid #daedda;
+}
+
+.nav-item-1{
+    margin-left: 5vw;
+}
+
+.nav-item-2{
+   display: flex;
+   gap:5vw;
+   margin-right: 5vw;
+   align-items: center;
+}
+.nav-item-2 i{
+    display: none;
+    font-size: 1.6vw;
+}
+.nav-item-2 a:hover{
+    color:cyan;
+}
+.nav-item-2 .sign{
+    background-color: cyan;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 1.2vw;
+    display: none;
+}
+.main-content{
+    height:calc(100% - 100px);
+    width: 100%;
+    /* background-color: rgb(122, 106, 110); */
+    display: flex;
+}
+.main-content .left{
+    /* background-color: crimson; */
+    height: 100%;
+    color:rgb(104, 79, 43);
+    
+    width:100%;
+    padding:5vw;
+
+}
+.main-content .left span{
+    color: cyan;
+}
+.main-content .left p{
+    margin-top: 5vw;
+}
+.main-content .left .cta{
+    background-color: cyan;
+    padding: 5px;
+    margin-top: 5vw;
+    border-radius: 5px;
+
+}
+.main-content .left .cta:hover{
+    background-color: tomato;
+}
+.main-content .right{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(133, 100, 52);
+}
+.main-content .right img{
+    height: 100%;
+    width:100%;
+}
+@media (max-width:600px) {
+    /* Nav-section */
+    .navbar{
+        /* background-color: chocolate; */
+        height: 10vw;
+        padding: 0 4vw;
+        /* flex-wrap: wrap; */
+
+    }
+    .nav-item-1 h2{
+        font-size: 10vw;
+        
+        /* border-radius: 50%; */
+        /* background-color: cyan; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav-item-2 a{
+        display: none;
+    }
+    .nav-item-2 i{
+        display:block;
+        font-size: 6vw;
+
+    }
+    
+    .nav-item-2 .sign{
+        display: block;
+        font-size: 6vw;
+        border-radius: 10px;
+        padding: 0 4vw;
+    }
+    /* Content-section */
+    .main-content{
+        flex-direction: column;
+        gap:20px;
+        padding: 0 4vw;
+    }
+    .main-content .cta{
+        font-size: 6vw;
+        margin-left: 150px;
+    }
+}
